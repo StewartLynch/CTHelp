@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CTHelp_Example' do
+  pod 'CTHelp', :path => '../'
+
+  target 'CTHelp_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
