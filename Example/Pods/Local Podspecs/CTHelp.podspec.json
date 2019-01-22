@@ -1,0 +1,22 @@
+{
+  "name": "CTHelp",
+  "version": "0.1.0",
+  "summary": "A short description of CTHelp.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/StewartLynch/CTHelp",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "StewartLynch": "slynch@createchsol.com"
+  },
+  "source": {
+    "git": "https://github.com/StewartLynch/CTHelp.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CTHelp/Classes/**/*"
+}

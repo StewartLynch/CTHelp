@@ -6,37 +6,23 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
-Pod::Spec.new do |s|
-  s.name             = 'CTHelp'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of CTHelp.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/StewartLynch/CTHelp'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'StewartLynch' => 'slynch@createchsol.com' }
-  s.source           = { :git => 'https://github.com/StewartLynch/CTHelp.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'CTHelp/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'CTHelp' => ['CTHelp/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+Pod::Spec.new do |spec|
+    spec.name         = 'CTHelp'
+    spec.version      = '0.1.0'
+    spec.summary      = 'A help system for iOS/Swift'
+    spec.authors      = { 'StewartLynch' => 'slynch@createchsol.com' }
+    spec.license      = 'MIT'
+    spec.platform = :ios, '10.0'
+    spec.homepage = 'https://github.com/StewartLynch/CTHelp.git'
+    spec.source = { git: 'https://github.com/StewartLynch/CTHelp.git'}
+    
+    spec.module_name = 'CTHelp'
+    
+    spec.source_files = 'CTHelp/**/*.{h,m,swift}'
+    spec.resources = 'CTHelp/Resources//*.*','CTHelp/Views/.{xib,storyboard}'
+    
+    spec.static_framework = true
+    spec.swift_version = "4.2"
+    spec.frameworks = 'UIKit'
+    
 end

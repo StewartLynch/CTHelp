@@ -1,0 +1,16 @@
+PODS:
+  - CTHelp (0.1.0)
+
+DEPENDENCIES:
+  - CTHelp (from `../`)
+
+EXTERNAL SOURCES:
+  CTHelp:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CTHelp: 4c6de885ecf4ac85911728aece44249febb8de69
+
+PODFILE CHECKSUM: c8c717adeabcd96ff2268d83ba4c5cf147b947d0
+
+COCOAPODS: 1.5.3

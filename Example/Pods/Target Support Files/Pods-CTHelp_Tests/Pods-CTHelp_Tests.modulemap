@@ -1,0 +1,6 @@
+framework module Pods_CTHelp_Tests {
+  umbrella header "Pods-CTHelp_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
