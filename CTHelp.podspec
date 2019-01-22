@@ -14,12 +14,12 @@ Pod::Spec.new do |spec|
     spec.license      = 'MIT'
     spec.platform = :ios, '10.0'
     spec.homepage = 'https://github.com/StewartLynch/CTHelp.git'
-    spec.source = { git: 'https://github.com/StewartLynch/CTHelp.git'}
+    spec.source = { git: 'https://github.com/StewartLynch/CTHelp.git', :tag => spec.version.to_s}
     
     spec.module_name = 'CTHelp'
     
     spec.source_files = 'CTHelp/**/*.{h,m,swift}'
-    spec.resources = 'CTHelp/Resources//*.*','CTHelp/Views/.{xib,storyboard}'
+    spec.resources = 'CTHelp/Resources/*.*','CTHelp/Views/.{xib,storyboard}'
     
     spec.static_framework = true
     spec.swift_version = "4.2"
