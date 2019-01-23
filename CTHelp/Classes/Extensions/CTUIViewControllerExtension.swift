@@ -10,7 +10,11 @@ import UIKit
 
 public extension UIViewController {
     static func loadTransparentModal(fromStoryboardNamed name: String) -> UIViewController {
-        let storyboard =  UIStoryboard(name: name, bundle: nil)
+		//let bundle = Bundle(for: type(of: CTHelpViewController.self))
+		let podBundle = Bundle(for: CTHelpViewController.self)
+		let bundleURL = podBundle.url(forResource: "CTHelp", withExtension: "bundle")
+		let bundle = Bundle(url: bundleURL!)
+        let storyboard =  UIStoryboard(name: name, bundle: bundle)
         let newVC = storyboard.instantiateViewController(withIdentifier: String(describing: self))
         newVC.providesPresentationContextTransitionStyle = true
         newVC.definesPresentationContext = true

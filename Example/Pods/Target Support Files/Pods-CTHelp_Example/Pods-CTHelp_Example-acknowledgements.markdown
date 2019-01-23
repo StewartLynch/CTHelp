@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## CTHelp
 
-Copyright (c) 2019 StewartLynch <slynch@createchsol.com>
+Copyright (c) 2019 aurimas@engagecraft.com <aurimas@engagecraft.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

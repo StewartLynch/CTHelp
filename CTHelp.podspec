@@ -6,23 +6,23 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
-Pod::Spec.new do |spec|
-    spec.name         = 'CTHelp'
-    spec.version      = '0.1.0'
-    spec.summary      = 'A help system for iOS/Swift'
-    spec.authors      = { 'StewartLynch' => 'slynch@createchsol.com' }
-    spec.license      = 'MIT'
-    spec.platform = :ios, '10.0'
-    spec.homepage = 'https://github.com/StewartLynch/CTHelp.git'
-    spec.source = { git: 'https://github.com/StewartLynch/CTHelp.git', :tag => spec.version.to_s}
-    
-    spec.module_name = 'CTHelp'
-    
-    spec.source_files = 'CTHelp/**/*.{h,m,swift}'
-    spec.resources = 'CTHelp/Resources/*.*','CTHelp/Views/.{xib,storyboard}'
-    
-    spec.static_framework = true
-    spec.swift_version = "4.2"
-    spec.frameworks = 'UIKit'
-    
+Pod::Spec.new do |s|
+  s.name             = 'CTHelp'
+  s.version          = '0.1.0'
+  s.summary          = 'A help system for iOS/Swift'
+  s.authors      = { 'StewartLynch' => 'slynch@createchsol.com' }
+  s.homepage         = 'https://github.com/StewartLynch/CTHelp'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.source           = { :git => 'https://github.com/StewartLynch/CTHelp.git', :tag => s.version.to_s }
+ 
+  s.ios.deployment_target = '10.0'
+
+  s.source_files = 'CTHelp/Classes/**/*'
+
+  s.resource_bundles = {
+     'CTHelp' => ['CTHelp/Assets/**.*']
+   }
+
+  s.swift_version = "4.2"
+  s.frameworks = 'UIKit'
 end

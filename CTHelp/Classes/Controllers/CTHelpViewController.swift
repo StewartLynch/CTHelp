@@ -46,7 +46,10 @@ public class CTHelpViewController: UIViewController,UIScrollViewDelegate,MFMailC
     
     public func loadCTHelp() {
         for (index,ctHelpItem) in ctHelpItem.enumerated() {
-            guard let ctHelpView = Bundle.main.loadNibNamed("CTHelp", owner: self, options: nil)?.first as? CTHelpView else {return}
+			let podBundle = Bundle(for: CTHelpViewController.self)
+			let bundleURL = podBundle.url(forResource: "CTHelp", withExtension: "bundle")
+			let bundle = Bundle(url: bundleURL!)!
+            guard let ctHelpView = bundle.loadNibNamed("CTHelp", owner: self, options: nil)?.first as? CTHelpView else {return}
             ctHelpView.delegate = self
             ctHelpView.configureView(ctHelpItem: ctHelpItem)
             scrollView.addSubview(ctHelpView)

@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  CTHelp
 //
-//  Created by StewartLynch on 01/22/2019.
-//  Copyright (c) 2019 StewartLynch. All rights reserved.
+//  Created by aurimas@engagecraft.com on 01/23/2019.
+//  Copyright (c) 2019 aurimas@engagecraft.com. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
