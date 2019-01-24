@@ -5,11 +5,15 @@
 [![License](https://img.shields.io/cocoapods/l/CTHelp.svg?style=flat)](https://cocoapods.org/pods/CTHelp)
 [![Platform](https://img.shields.io/cocoapods/p/CTHelp.svg?style=flat)](https://cocoapods.org/pods/CTHelp)
 
-## Example
+## About CTHelp
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+CTHelp is a Help system for iOS/Swift 4.2+
+
+![SampleScreen](/Users/slynch/Dropbox/Xcode Swift Techniques/Display Help/CTHelp/SampleScreen.gif)
 
 ## Requirements
+
+Xcode 10+, Swift 4.2+
 
 ## Installation
 

@@ -11,7 +11,6 @@
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		78E0B67DFBCDA0CDD6CFB381 /* Pods_CTHelp_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959EE1F320E2E64AE6D08F93 /* Pods_CTHelp_Tests.framework */; };
 		BB6C6FCD21F963B200735B67 /* SingleBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6C6FCC21F963B200735B67 /* SingleBookViewController.swift */; };
@@ -19,6 +18,7 @@
 		BB6C6FD321F9656500735B67 /* BookItemDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6C6FCF21F9656400735B67 /* BookItemDataSource.swift */; };
 		BB6C6FD421F9656500735B67 /* Books.json in Resources */ = {isa = PBXBuildFile; fileRef = BB6C6FD021F9656400735B67 /* Books.json */; };
 		BB6C6FD521F9656500735B67 /* BookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6C6FD121F9656500735B67 /* BookItem.swift */; };
+		BB9A07E921FA3D0B00C4351B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9A07E821FA3D0B00C4351B /* Launch Screen.storyboard */; };
 		E04E82DAAABA5A96A3389B7E /* Pods_CTHelp_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC20587A7549117B8C7E248 /* Pods_CTHelp_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +42,6 @@
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* CTHelp_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTHelp_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		BB6C6FCF21F9656400735B67 /* BookItemDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookItemDataSource.swift; sourceTree = "<group>"; };
 		BB6C6FD021F9656400735B67 /* Books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Books.json; sourceTree = "<group>"; };
 		BB6C6FD121F9656500735B67 /* BookItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookItem.swift; sourceTree = "<group>"; };
+		BB9A07E821FA3D0B00C4351B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		EB48933BFEC723CAF6760B1B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FE1A76287537C3B99ECC45AC /* Pods-CTHelp_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTHelp_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CTHelp_Tests/Pods-CTHelp_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FFB8AB481A96D2EF9BC7AAC1 /* Pods-CTHelp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTHelp_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CTHelp_Example/Pods-CTHelp_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for CTHelp */,
+				607FACD21AFB9204008FA782 /* MyBooks Example for CTHelp */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				67A6D93C49F1B22233CB6AE2 /* Pods */,
@@ -109,28 +109,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for CTHelp */ = {
+		607FACD21AFB9204008FA782 /* MyBooks Example for CTHelp */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				BB6C6FCC21F963B200735B67 /* SingleBookViewController.swift */,
-				BB6C6FD121F9656500735B67 /* BookItem.swift */,
-				BB6C6FCF21F9656400735B67 /* BookItemDataSource.swift */,
-				BB6C6FD021F9656400735B67 /* Books.json */,
-				BB6C6FCE21F9656400735B67 /* StorageFunctions.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				BB9A07EB21FA4CB600C4351B /* ViewContollers */,
+				BB9A07EC21FA4D2A00C4351B /* DataAndStorage */,
+				BB9A07ED21FA4D6700C4351B /* Model */,
+				BB9A07EA21FA4C8A00C4351B /* Storyboards */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for CTHelp";
+			name = "MyBooks Example for CTHelp";
 			path = CTHelp;
 			sourceTree = "<group>";
 		};
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -172,6 +168,43 @@
 				3F34264DFDCDB169237D230D /* Pods-CTHelp_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB9A07EA21FA4C8A00C4351B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				BB9A07E821FA3D0B00C4351B /* Launch Screen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		BB9A07EB21FA4CB600C4351B /* ViewContollers */ = {
+			isa = PBXGroup;
+			children = (
+				BB6C6FCC21F963B200735B67 /* SingleBookViewController.swift */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+			);
+			path = ViewContollers;
+			sourceTree = "<group>";
+		};
+		BB9A07EC21FA4D2A00C4351B /* DataAndStorage */ = {
+			isa = PBXGroup;
+			children = (
+				BB6C6FCF21F9656400735B67 /* BookItemDataSource.swift */,
+				BB6C6FD021F9656400735B67 /* Books.json */,
+				BB6C6FCE21F9656400735B67 /* StorageFunctions.swift */,
+			);
+			path = DataAndStorage;
+			sourceTree = "<group>";
+		};
+		BB9A07ED21FA4D6700C4351B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB6C6FD121F9656500735B67 /* BookItem.swift */,
+			);
+			name = Model;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +296,7 @@
 			files = (
 				BB6C6FD421F9656500735B67 /* Books.json in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				BB9A07E921FA3D0B00C4351B /* Launch Screen.storyboard in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,14 +418,6 @@
 				607FACDA1AFB9204008FA782 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
