@@ -55,7 +55,7 @@ Also, the links to the emailAddress and webSite will be broken until replaced  w
 
 Read the Medium Blog for full documentation and tips for setting up CTHelp.  Includes link to YouTube Video
 
-[https://medium.com/@stewartlynch/adding-help-to-your-ios-app-7d53053fb563](
+[https://medium.com/@stewartlynch/adding-help-to-your-ios-app-7d53053fb563](https://medium.com/@stewartlynch/adding-help-to-your-ios-app-7d53053fb563)
 
 ## Author
 
