@@ -24,6 +24,14 @@ pod 'CTHelp'
 
 Add a button to your view and link the action to a function that sets up and presents the CTHelp view controller.
 
+Here is a sample function that will create 3 help cards + 2 defaults (link to web and support email)
+
+![helpScreens](helpScreens.png)
+
+**Note**: No images appear until you upload images to your project and replace 'SomeFullSizedImage', 'SomeSmallImage' and 'CompanyLogo' with the corresponding names to your images.
+
+Also, the links to the emailAddress and webSite will be broken until replaced  with valid entries.
+
 ```swift
 func showCTHelp() {
    let ctHelp = CTHelp()
@@ -43,15 +51,9 @@ func showCTHelp() {
 }
 ```
 
-The above will create 3 help cards + 2 defaults (link to web and support email) however, no images appear until you upload images to your project and replace 'SomeFullSizedImage', 'SomeSmallImage' and 'CompanyLogo' with the corresponding names to your images.
 
-Also, the links to the emailAddress and webSite will be broken until replaced  with valid entries.
-
-![helpScreens](helpScreens.png)
 
 ## Documentation:
-
-------
 
 Read the Medium Blog for full documentation and tips for setting up CTHelp.  Includes link to YouTube Video
 
