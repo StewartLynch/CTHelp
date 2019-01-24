@@ -1,0 +1,28 @@
+
+[
+    {
+        "title": "One Man's Flag",
+        "author" : "David Downing",
+        "notes" : "One of my favourite authors"
+    },
+    {
+        "title": "Lethal White",
+        "author": "Cormoron Strike",
+        "notes" : "Better than any of the Harry Potter novels."
+    },
+    {
+        "title": "The Alphabet House",
+        "author": "Jussi Alder-Olsen",
+        "notes" : "Great Scandinavian author."
+    },
+    {
+        "title": "Munich",
+        "author": "Robert Harris",
+        "notes" : "He keeps churning them out."
+    },
+    {
+        "title": "Then We Take Berlin",
+        "author": "John Lawton",
+        "notes" : "A great read."
+    }
+]

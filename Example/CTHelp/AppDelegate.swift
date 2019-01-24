@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  CTHelp
+//  My Books
 //
-//  Created by aurimas@engagecraft.com on 01/23/2019.
-//  Copyright (c) 2019 aurimas@engagecraft.com. All rights reserved.
+//  Created by Stewart Lynch on 1/16/19.
+//  Copyright © 2019 Stewart Lynch. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
@@ -44,3 +44,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension UIColor {
+    static let bookAppTint =  UIColor(red: 48/255, green: 35/255, blue: 174/255, alpha: 1/0)
+}
