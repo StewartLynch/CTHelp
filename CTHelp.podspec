@@ -10,6 +10,9 @@ Pod::Spec.new do |s|
   s.name             = 'CTHelp'
   s.version          = '0.1.0'
   s.summary          = 'A help system for iOS/Swift'
+  s.description      = <<-DESC
+  A drop-in help system for iOS/Swift projects.  All you need to do is add your images and text.
+  DESC
   s.authors      = { 'StewartLynch' => 'slynch@createchsol.com' }
   s.homepage         = 'https://github.com/StewartLynch/CTHelp'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

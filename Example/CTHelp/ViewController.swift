@@ -38,8 +38,8 @@ class ViewController: UIViewController {
     
     func setupNavBar() {
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addBook))
-//        let ctHelpButton = UIBarButtonItem(image: UIImage(named: "CTHelp"), style: .plain, target: self, action: #selector(showCTHelp))
-        let ctHelpButton = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(showCTHelp))
+        let ctHelpButton = UIBarButtonItem(image: UIImage(named: "CTHelp"), style: .plain, target: self, action: #selector(showCTHelp))
+
         navigationItem.rightBarButtonItems = [ctHelpButton,addButton]
     }
     

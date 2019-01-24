@@ -47,6 +47,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ReH-FZ-RBZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -120,7 +121,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="Udk-M9-X0l">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="NAT-ta-UKW">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="CTHelp" id="NAT-ta-UKW">
                             <connections>
                                 <action selector="loadCTHelp:" destination="yPK-Ol-LNk" id="ZbI-zq-b0F"/>
                             </connections>
@@ -164,4 +165,7 @@
             <point key="canvasLocation" x="133.59999999999999" y="-564.46776611694156"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CTHelp" width="30" height="30"/>
+    </resources>
 </document>
