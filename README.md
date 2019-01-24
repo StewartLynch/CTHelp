@@ -9,7 +9,7 @@
 
 CTHelp is a Help system for iOS/Swift 4.2+
 
-![SampleScreen](/Users/slynch/Dropbox/Xcode Swift Techniques/Display Help/CTHelp/SampleScreen.gif)
+![SampleScreen](SampleScreen.gif)
 
 ## Requirements
 
