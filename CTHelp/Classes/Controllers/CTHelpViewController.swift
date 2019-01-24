@@ -2,8 +2,8 @@
 //  CTHelpViewController.swift
 //  CreaTECH Help
 //
-//  Created by Stewart Lynch on 2/14/18.
-//  Copyright © 2018 CreaTECH Solutions. All rights reserved.
+//  Created by Stewart Lynch on 1/16/19.
+//  Copyright © 2019 Stewart Lynch. All rights reserved.
 //
 
 import UIKit

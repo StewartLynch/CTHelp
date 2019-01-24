@@ -1,6 +1,6 @@
 //
-//  DefaultFunctions.swift
-//  My Books
+//  CTEmailFunctions.swift
+//  CTHelp
 //
 //  Created by Stewart Lynch on 2019-01-17.
 //  Copyright © 2019 Stewart Lynch. All rights reserved.

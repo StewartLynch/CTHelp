@@ -1,6 +1,6 @@
 //
 //  CTHelpView.swift
-//  CreaTECH Help
+//  CTHelp
 //
 //  Created by Stewart Lynch on 11/24/17.
 //  Copyright © 2017 CreaTECH Solutiions. All rights reserved.
