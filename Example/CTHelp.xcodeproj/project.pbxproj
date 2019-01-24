@@ -17,8 +17,8 @@
 		BB6C6FD221F9656500735B67 /* StorageFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6C6FCE21F9656400735B67 /* StorageFunctions.swift */; };
 		BB6C6FD321F9656500735B67 /* BookItemDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6C6FCF21F9656400735B67 /* BookItemDataSource.swift */; };
 		BB6C6FD421F9656500735B67 /* Books.json in Resources */ = {isa = PBXBuildFile; fileRef = BB6C6FD021F9656400735B67 /* Books.json */; };
-		BB6C6FD521F9656500735B67 /* BookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6C6FD121F9656500735B67 /* BookItem.swift */; };
 		BB9A07E921FA3D0B00C4351B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9A07E821FA3D0B00C4351B /* Launch Screen.storyboard */; };
+		BB9A082E21FA563D00C4351B /* BookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9A082D21FA563D00C4351B /* BookItem.swift */; };
 		E04E82DAAABA5A96A3389B7E /* Pods_CTHelp_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC20587A7549117B8C7E248 /* Pods_CTHelp_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +52,8 @@
 		BB6C6FCE21F9656400735B67 /* StorageFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageFunctions.swift; sourceTree = "<group>"; };
 		BB6C6FCF21F9656400735B67 /* BookItemDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookItemDataSource.swift; sourceTree = "<group>"; };
 		BB6C6FD021F9656400735B67 /* Books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Books.json; sourceTree = "<group>"; };
-		BB6C6FD121F9656500735B67 /* BookItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookItem.swift; sourceTree = "<group>"; };
 		BB9A07E821FA3D0B00C4351B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		BB9A082D21FA563D00C4351B /* BookItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookItem.swift; path = CTHelp/Model/BookItem.swift; sourceTree = SOURCE_ROOT; };
 		EB48933BFEC723CAF6760B1B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FE1A76287537C3B99ECC45AC /* Pods-CTHelp_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTHelp_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CTHelp_Tests/Pods-CTHelp_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FFB8AB481A96D2EF9BC7AAC1 /* Pods-CTHelp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTHelp_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CTHelp_Example/Pods-CTHelp_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -201,7 +201,7 @@
 		BB9A07ED21FA4D6700C4351B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BB6C6FD121F9656500735B67 /* BookItem.swift */,
+				BB9A082D21FA563D00C4351B /* BookItem.swift */,
 			);
 			name = Model;
 			path = "New Group";
@@ -385,7 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB6C6FD321F9656500735B67 /* BookItemDataSource.swift in Sources */,
-				BB6C6FD521F9656500735B67 /* BookItem.swift in Sources */,
+				BB9A082E21FA563D00C4351B /* BookItem.swift in Sources */,
 				BB6C6FCD21F963B200735B67 /* SingleBookViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,

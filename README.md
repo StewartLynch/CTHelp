@@ -11,10 +11,6 @@ CTHelp is a Help system for iOS/Swift 4.2+
 
 ![SampleScreen](SampleScreen.gif)
 
-## Requirements
-
-Xcode 10+, Swift 4.2+
-
 ## Installation
 
 CTHelp is available through [CocoaPods](https://cocoapods.org). To install
@@ -23,6 +19,43 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'CTHelp'
 ```
+
+### Quick Start
+
+Add a button to your view and link the action to a function that sets up and presents the CTHelp view controller.
+
+```swift
+func showCTHelp() {
+   let ctHelp = CTHelp()
+   ctHelp.new(CTHelpItem(title:"No Text-Image Only",
+                         helpText: "",
+                         imageName:"SomeFullSizedImage"))
+   ctHelp.new(CTHelpItem(title:"Text and Image",
+                         helpText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                         imageName:"SomeSmallImage"))
+   ctHelp.new(CTHelpItem(title:"No Image-Text Only",
+                         helpText: "Eu tempor suscipit dis sed. Tortor velit orci bibendum mattis non metus ornare consequat. Condimentum habitasse dictumst eros nibh rhoncus non pulvinar fermentum. Maecenas convallis gravida facilisis. Interdum, conubia lacinia magnis duis nec quisque.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                         imageName:""))
+ // Optional addition of two default cards
+   ctHelp.appendDefaults(companyName: "Your Company Name", emailAddress: "yourContactEmail@somewhere.com", data: nil, webSite: "https://www.yourWebsite.com", companyImageName: "CompanyLogo")
+
+   ctHelp.presentHelp(from: self)
+}
+```
+
+The above will create 3 help cards + 2 defaults (link to web and support email) however, no images appear until you upload images to your project and replace 'SomeFullSizedImage', 'SomeSmallImage' and 'CompanyLogo' with the corresponding names to your images.
+
+Also, the links to the emailAddress and webSite will be broken until replaced  with valid entries.
+
+![helpScreens](helpScreens.png)
+
+## Documentation:
+
+------
+
+Read the Medium Blog for full documentation and tips for setting up CTHelp.  Includes link to YouTube Video
+
+[https://medium.com/@stewartlynch/adding-help-to-your-ios-app-7d53053fb563](
 
 ## Author
 
