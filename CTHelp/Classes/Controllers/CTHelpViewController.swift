@@ -16,6 +16,12 @@ public class CTHelpViewController: UIViewController,UIScrollViewDelegate,MFMailC
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var ctHelpPageControl: UIPageControl!
     var mailTintColor:UIColor?
+    var bgViewColor:UIColor?
+    var helpTextColor:UIColor?
+    var titleColor:UIColor?
+    var actionButtonBGColor:UIColor?
+    var actionButtonTextColor:UIColor?
+    
     var address:String!
     var ctHelpItem:[CTHelpItem] = []
     
@@ -51,7 +57,12 @@ public class CTHelpViewController: UIViewController,UIScrollViewDelegate,MFMailC
 			let bundle = Bundle(url: bundleURL!)!
             guard let ctHelpView = bundle.loadNibNamed("CTHelp", owner: self, options: nil)?.first as? CTHelpView else {return}
             ctHelpView.delegate = self
-            ctHelpView.configureView(ctHelpItem: ctHelpItem)
+            ctHelpView.configureView(ctHelpItem: ctHelpItem,
+                                     bgViewColor: bgViewColor,
+                                     titleColor: titleColor,
+                                     helpTextColor: helpTextColor,
+                                     actionButtonBGColor: actionButtonBGColor,
+                                     actionButtonTextColor: actionButtonTextColor)
             scrollView.addSubview(ctHelpView)
             ctHelpView.frame.size.width = self.view.bounds.size.width
             ctHelpView.frame.origin.x = CGFloat(index) * self.view.bounds.size.width

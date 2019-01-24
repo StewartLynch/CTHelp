@@ -128,6 +128,7 @@
             <connections>
                 <outlet property="actionBtn" destination="XaW-6w-gbT" id="EpU-t6-MvO"/>
                 <outlet property="actionButtonTopConstraint" destination="1Lc-fd-Ixt" id="OmE-UO-3gD"/>
+                <outlet property="bgView" destination="P4P-zu-6xW" id="TP6-Ah-3Ms"/>
                 <outlet property="heightConstraint" destination="7Xg-Ow-7UN" id="1ER-vY-tAH"/>
                 <outlet property="helpTextView" destination="12c-k0-xgd" id="jNR-Lo-EaH"/>
                 <outlet property="imageHeightConstraint" destination="zWu-gl-4lC" id="s6P-OG-LEO"/>

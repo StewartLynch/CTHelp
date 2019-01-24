@@ -15,10 +15,18 @@ import UIKit
 ///
 /// On each viewController that you wish to present a help screen, simply create a function that will be pesented by the action associated with your help button.
 /// This function adds in your help items for the particlar screen.
+
 ///
 /// ```
 ///
 ///func showCTHelp() {
+///    // Optional values to set colors
+///      // ctHelp.ctBgViewColor = .black
+///      // ctHelp.ctTitleColor = .white
+///      // ctHelp.ctActionButtonBGColor = .white
+///      // ctHelp.ctHelpTextColor = .white
+///      // ctHelp.ctActionButtonTextColor = .black
+///
 ///    let ctHelp = CTHelp()
 ///    ctHelp.new(CTHelpItem(title:"No Text-Image Only",
 ///                          helpText: "",
@@ -29,6 +37,7 @@ import UIKit
 ///    ctHelp.new(CTHelpItem(title:"No Image-Text Only",
 ///                          helpText: "Eu tempor suscipit dis sed. Tortor velit orci bibendum mattis non metus ornare consequat. Condimentum habitasse dictumst eros nibh rhoncus non pulvinar fermentum. Maecenas convallis gravida facilisis. Interdum, conubia lacinia magnis duis nec quisque.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 ///                          imageName:""))
+///
 ///  // Optional addition of two default cards
 ///    ctHelp.appendDefaults(companyName: "Your Company Name", emailAddress: "yourContactEmail@somewhere.com", data: nil, webSite: "https://www.yourWebsite.com", companyImageName: "CompanyLogo")
 ///
@@ -39,8 +48,16 @@ import UIKit
 ///
 
 public class CTHelp {
+
 public  var helpItems:[CTHelpItem] = []
+    
+    /// Optional Color values
 public var ctMailtintColor:UIColor?
+public var ctBgViewColor:UIColor?
+public var ctHelpTextColor:UIColor?
+public var ctTitleColor:UIColor?
+public var ctActionButtonBGColor:UIColor?
+public var ctActionButtonTextColor:UIColor?
 
 public init(){}
      /// Create a new help item and add it to the helpItems Array.
@@ -78,7 +95,13 @@ public init(){}
         let ctHelpVC = CTHelpViewController.loadTransparentModal(fromStoryboardNamed: "CTHelp") as! CTHelpViewController
         ctHelpVC.ctHelpItem = helpItems
         ctHelpVC.mailTintColor = ctMailtintColor
-        
+        ctHelpVC.bgViewColor = ctBgViewColor
+        ctHelpVC.helpTextColor = ctHelpTextColor
+        ctHelpVC.titleColor = ctTitleColor
+        ctHelpVC.actionButtonBGColor = ctActionButtonBGColor
+        ctHelpVC.actionButtonTextColor = ctActionButtonTextColor
+
+    
         vc.present(ctHelpVC,animated: true)
     }
 }

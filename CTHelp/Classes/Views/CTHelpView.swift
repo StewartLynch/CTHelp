@@ -10,12 +10,14 @@ import UIKit
 
 
 class CTHelpView: UIView {
+    @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var helpTextView: UITextView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     @IBOutlet weak var actionButtonTopConstraint: NSLayoutConstraint!
+    
     var webSite:String?
     var contactEmail:String?
     var data:Data?
@@ -28,8 +30,26 @@ class CTHelpView: UIView {
     }
     
     
-    func configureView(ctHelpItem:CTHelpItem) {
+    func configureView(ctHelpItem:CTHelpItem,bgViewColor:UIColor?,titleColor:UIColor?,helpTextColor:UIColor?,actionButtonBGColor:UIColor?, actionButtonTextColor:UIColor?) {
         var imageViewHeightConstraintConstant:CGFloat = 0
+        // Set up colors
+        if let color = bgViewColor {
+            bgView.backgroundColor = color
+        }
+        if let color = titleColor {
+            titleLabel.textColor = color
+        }
+        if let color = helpTextColor {
+            helpTextView.textColor = color
+        }
+        
+        if let color = actionButtonBGColor {
+            actionBtn.backgroundColor = color
+        }
+        
+        if let color = actionButtonTextColor {
+            actionBtn.setTitleColor(color, for: .normal)
+        }
         titleLabel.text = ctHelpItem.title
         helpTextView.text = ctHelpItem.helpText
         if let webSite = ctHelpItem.webSite {
