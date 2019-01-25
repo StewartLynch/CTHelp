@@ -9,7 +9,7 @@
 import UIKit
 
 /// A Class for creating and presenting an array of HelpItems in a modal ViewController that has a transparent background.
-
+/// - Parameter helpItem: an item of help.
 ///
 /// For Example:
 ///
@@ -20,14 +20,15 @@ import UIKit
 /// ```
 ///
 ///func showCTHelp() {
-///    // Optional values to set colors
-///      // ctHelp.ctBgViewColor = .black
-///      // ctHelp.ctTitleColor = .white
-///      // ctHelp.ctActionButtonBGColor = .white
-///      // ctHelp.ctHelpTextColor = .white
-///      // ctHelp.ctActionButtonTextColor = .black
-///
+
 ///    let ctHelp = CTHelp()
+///    // Optional values to set colors
+///      // ctHelp.ctBgViewColor = .white
+///      // ctHelp.ctTitleColor = .darkText
+///      // ctHelp.ctHelpTextColor = .darkGray
+///      // ctHelp.ctActionButtonBGColor = UIColor(red: 28/255, green: 136/255, blue: 197.255, alpha: 1)
+///      // ctHelp.ctActionButtonTextColor = .white
+///
 ///    ctHelp.new(CTHelpItem(title:"No Text-Image Only",
 ///                          helpText: "",
 ///                          imageName:"SomeFullSizedImage"))
@@ -50,8 +51,7 @@ import UIKit
 public class CTHelp {
 
 public  var helpItems:[CTHelpItem] = []
-    
-    /// Optional Color values
+
 public var ctMailtintColor:UIColor?
 public var ctBgViewColor:UIColor?
 public var ctHelpTextColor:UIColor?
@@ -69,7 +69,7 @@ public init(){}
     
     /// Add defaults to the end of the helpItems array.
    public func appendDefaults(companyName:String, emailAddress:String?, data:Data?, webSite:String?, companyImageName:String?) {
-        
+
         let developerWebSite = CTHelpItem(title:"\(companyName)",
                                         helpText: "\(Bundle.main.displayName) is created by \(companyName).  Please visit our website for more information about our company.",
             imageName:companyImageName ?? "",

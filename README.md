@@ -34,6 +34,7 @@ Also, the links to the emailAddress and webSite will be broken until replaced  w
 
 ```swift
 func showCTHelp() {
+   let ctHelp = CTHelp()
    // Optional values to set colors
      // ctHelp.ctBgViewColor = .black
      // ctHelp.ctTitleColor = .white
@@ -41,7 +42,6 @@ func showCTHelp() {
      // ctHelp.ctHelpTextColor = .white
      // ctHelp.ctActionButtonTextColor = .black
 
-   let ctHelp = CTHelp()
    ctHelp.new(CTHelpItem(title:"No Text-Image Only",
                          helpText: "",
                          imageName:"SomeFullSizedImage"))
