@@ -26,21 +26,21 @@ Add a button to your view and link the action to a function that sets up and pre
 
 Here is a sample function that will create 3 help cards + 2 defaults (link to web and support email)
 
-![helpScreens](helpScreens.png)
-
 **Note**: No images appear until you upload images to your project and replace 'SomeFullSizedImage', 'SomeSmallImage' and 'CompanyLogo' with the corresponding names to your images.
 
 Also, the links to the emailAddress and webSite will be broken until replaced  with valid entries.
 
+![SampleCards](SampleCards.png)
+
 ```swift
 func showCTHelp() {
    let ctHelp = CTHelp()
-   // Optional values to set colors
-     // ctHelp.ctBgViewColor = .black
-     // ctHelp.ctTitleColor = .white
-     // ctHelp.ctActionButtonBGColor = .white
-     // ctHelp.ctHelpTextColor = .white
-     // ctHelp.ctActionButtonTextColor = .black
+        // Optional values to set colors
+        //  ctHelp.ctBgViewColor = .white
+        //  ctHelp.ctTitleColor = .darkText
+        //  ctHelp.ctHelpTextColor = .darkGray
+        //  ctHelp.ctActionButtonBGColor = UIColor(red: 28/255, green: 136/255, blue: 197.255, alpha: 1)
+        //  ctHelp.ctActionButtonTextColor = .white
 
    ctHelp.new(CTHelpItem(title:"No Text-Image Only",
                          helpText: "",
@@ -59,9 +59,15 @@ func showCTHelp() {
 }
 ```
 
+The optional color values let you change each of the 4 different components of the CTHelpView
 
+![image-20190124165825249](Optionals.png)
 
-## Documentation:
+So uncommenting and changing some or all of the values can change the appearance of your help card.
+
+![image-20190124170300316](Optionals2.png)
+
+## More Documentation:
 
 Read the Medium Blog for full documentation and tips for setting up CTHelp.  Includes link to YouTube Video
 
