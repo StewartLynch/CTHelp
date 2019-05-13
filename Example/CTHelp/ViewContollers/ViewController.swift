@@ -71,10 +71,11 @@ class ViewController: UIViewController {
         present(alert,animated: true)
     }
     
-    
     @objc func showCTHelp() {
         let ctHelp = CTHelp()
         ctHelp.ctMailtintColor = UIColor.bookAppTint
+        ctHelp.ctContactString = "Contact Me"
+
         
         ctHelp.new(CTHelpItem(title:"List of books",
                               helpText: "This screen shows a list of all of the books that you have read.\nAs you read more books you read more books you can add to this list.\nYou can also remove books from the list as well.  See the other help screens here for more information.",

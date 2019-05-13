@@ -18,9 +18,12 @@ class CTHelpView: UIView {
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     @IBOutlet weak var actionButtonTopConstraint: NSLayoutConstraint!
     
+    
     var webSite:String?
     var contactEmail:String?
     var data:Data?
+    var contactString:String?
+    var webString:String?
     
     @IBOutlet weak var actionBtn: UIButton!
     weak var delegate: CTHelpViewController!
@@ -30,12 +33,24 @@ class CTHelpView: UIView {
     }
     
     
-    func configureView(ctHelpItem:CTHelpItem,bgViewColor:UIColor?,titleColor:UIColor?,helpTextColor:UIColor?,actionButtonBGColor:UIColor?, actionButtonTextColor:UIColor?) {
+    func configureView(ctHelpItem:CTHelpItem,bgViewColor:UIColor?,titleColor:UIColor?,helpTextColor:UIColor?,actionButtonBGColor:UIColor?, actionButtonTextColor:UIColor?, contactButtonString:String?, webButtonString:String?) {
         var imageViewHeightConstraintConstant:CGFloat = 0
         // Set up colors
         if let color = bgViewColor {
             bgView.backgroundColor = color
         }
+        if let webString = webButtonString {
+            self.webString = webString
+        } else {
+            self.webString = "Visit Web Site"
+        }
+        
+        if let contactString = contactButtonString {
+            self.contactString = contactString
+        } else {
+            self.contactString = "Contact Developer"
+        }
+        
         if let color = titleColor {
             titleLabel.textColor = color
         }
@@ -76,11 +91,11 @@ class CTHelpView: UIView {
             case .Web:
                 actionButtonTopConstraint.constant = 43
                 actionBtn.isHidden = false
-                actionBtn.setTitle("Visit Web Site", for: .normal)
+                actionBtn.setTitle(webString, for: .normal)
             case .Email:
                 actionButtonTopConstraint.constant = 43
                 actionBtn.isHidden = false
-                actionBtn.setTitle("Contact Developer", for: .normal)
+                actionBtn.setTitle(contactString, for: .normal)
             }
         } else {
             actionButtonTopConstraint.constant = 0
@@ -90,7 +105,7 @@ class CTHelpView: UIView {
     }
     
     @IBAction func actionRequest(_ sender: UIButton) {
-        if actionBtn.title(for: .normal) == "Visit Web Site" {
+        if actionBtn.title(for: .normal) == webString {
             if let webSite = webSite {
                 guard let url = URL(string: webSite) else {return}
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)

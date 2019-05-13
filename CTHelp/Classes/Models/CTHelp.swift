@@ -23,11 +23,13 @@ import UIKit
 
 ///    let ctHelp = CTHelp()
 ///    // Optional values to set colors
-///      // ctHelp.ctBgViewColor = .white
-///      // ctHelp.ctTitleColor = .darkText
-///      // ctHelp.ctHelpTextColor = .darkGray
-///      // ctHelp.ctActionButtonBGColor = UIColor(red: 28/255, green: 136/255, blue: 197.255, alpha: 1)
-///      // ctHelp.ctActionButtonTextColor = .white
+///    // ctHelp.ctBgViewColor = .white
+///    // ctHelp.ctTitleColor = .darkText
+///    // ctHelp.ctHelpTextColor = .darkGray
+///    // ctHelp.ctActionButtonBGColor = UIColor(red: 28/255, green: 136/255, blue: 197.255, alpha: 1)
+///    // ctHelp.ctActionButtonTextColor = .white
+///    // ctHelp.ctContactString = "Contact Developer"
+///    // ctHelp.ctWebString = "Visit Web Site"
 ///
 ///    ctHelp.new(CTHelpItem(title:"No Text-Image Only",
 ///                          helpText: "",
@@ -58,6 +60,8 @@ public var ctHelpTextColor:UIColor?
 public var ctTitleColor:UIColor?
 public var ctActionButtonBGColor:UIColor?
 public var ctActionButtonTextColor:UIColor?
+public var ctWebString:String?
+public var ctContactString:String?
 
 public init(){}
      /// Create a new help item and add it to the helpItems Array.
@@ -100,6 +104,8 @@ public init(){}
         ctHelpVC.titleColor = ctTitleColor
         ctHelpVC.actionButtonBGColor = ctActionButtonBGColor
         ctHelpVC.actionButtonTextColor = ctActionButtonTextColor
+        ctHelpVC.contactButtonString = ctContactString
+        ctHelpVC.webButtonString = ctWebString
 
     
         vc.present(ctHelpVC,animated: true)

@@ -21,6 +21,8 @@ public class CTHelpViewController: UIViewController,UIScrollViewDelegate,MFMailC
     var titleColor:UIColor?
     var actionButtonBGColor:UIColor?
     var actionButtonTextColor:UIColor?
+    var webButtonString:String?
+    var contactButtonString:String?
     
     var address:String!
     var ctHelpItem:[CTHelpItem] = []
@@ -62,7 +64,10 @@ public class CTHelpViewController: UIViewController,UIScrollViewDelegate,MFMailC
                                      titleColor: titleColor,
                                      helpTextColor: helpTextColor,
                                      actionButtonBGColor: actionButtonBGColor,
-                                     actionButtonTextColor: actionButtonTextColor)
+                                     actionButtonTextColor: actionButtonTextColor,
+                                     contactButtonString: contactButtonString,
+                                     webButtonString: webButtonString
+            )
             scrollView.addSubview(ctHelpView)
             ctHelpView.frame.size.width = self.view.bounds.size.width
             ctHelpView.frame.origin.x = CGFloat(index) * self.view.bounds.size.width
