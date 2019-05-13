@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CTHelp'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'A help system for iOS/Swift'
   s.description      = <<-DESC
   A drop-in help system for iOS/Swift projects.  All you need to do is add your images and text.
@@ -26,6 +26,6 @@ Pod::Spec.new do |s|
      'CTHelp' => ['CTHelp/Assets/**.*']
    }
 
-  s.swift_version = "4.2"
+  s.swift_version = "5.0"
   s.frameworks = 'UIKit'
 end
