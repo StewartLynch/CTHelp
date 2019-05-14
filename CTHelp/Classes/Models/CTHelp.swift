@@ -43,24 +43,24 @@ import UIKit
 ///
 ///  // Optional addition of two default cards
 ///  // Use only if you wish to change the strings presented in the two default cards
-///    // ctHelp.ctContactButtonTitle = ""
 ///    // ctHelp.ctWebButtonTitle = ""
 ///    // ctHelp.ctWebHelpText = ""
 ///    // ctHelp.ctContactTitle = ""
 ///    // ctHelp.ctContactHelpText = ""
 ///    // ctHelp.ctIncludeDataText = ""
+///    // ctHelp.ctContactButtonTitle = ""
 ///
 ///    // Email data
 ///    // ctHelp.ctEmailSubject = ""
-///    // ctHelp.ctEmailPreface = ""
-///    // ctHelp.ctEmailBody = ""
 ///    // ctHelp.ctEmailAttachNote = ""
+///    // ctHelp.ctEmailBody = ""
 ///
 ///    // Email alert
 ///    // ctHelp.ctDataAlertTitle = ""
 ///    // ctHelp.ctDataAlertMessage = ""
-///    // ctHelp.ctDataAlertActionYes = ""
 ///    // ctHelp.ctDataAlertActionNo = ""
+///    // ctHelp.ctDataAlertActionYes = ""
+///
 ///    ctHelp.appendDefaults(companyName: "Your Company Name", emailAddress: "yourContactEmail@somewhere.com", data: nil, webSite: "https://www.yourWebsite.com", companyImageName: "CompanyLogo")
 ///
 ///    ctHelp.presentHelp(from: self)
@@ -81,20 +81,23 @@ public class CTHelp {
     public var ctActionButtonTextColor:UIColor?
     
     // Custom Strings
-    public var ctWebButtonTitle:String?
-    public var ctContactButtonTitle:String?
+    
     public var ctWebHelpText:String?
+    public var ctWebButtonTitle:String?
+    
     public var ctContactTitle:String?
     public var ctContactHelpText:String?
     public var ctIncludeDataText:String?
+    public var ctContactButtonTitle:String?
+    
     public var ctDataAlertTitle:String?
     public var ctDataAlertMessage:String?
-    public var ctDataAlertActionNo:String?
     public var ctDataAlertActionYes:String?
+    public var ctDataAlertActionNo:String?
+    
     public var ctEmailSubject:String?
-    public var ctEmailPreface:String?
-    public var ctEmailBody:String?
     public var ctEmailAttachNote:String?
+    public var ctEmailBody:String?
     
     public init(){}
     /// Create a new help item and add it to the helpItems Array.
@@ -139,7 +142,6 @@ public class CTHelp {
                                 dataAlertActionNo: self.ctDataAlertActionNo,
                                 dataAlertActionYes: self.ctDataAlertActionYes,
                                 emailSubject: self.ctEmailSubject,
-                                emailPreface: self.ctEmailPreface,
                                 emailBody: self.ctEmailBody,
                                 emailAttachNote: self.ctEmailAttachNote)
         ctHelpVC.ctString = ctString

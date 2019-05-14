@@ -8,7 +8,7 @@
 import Foundation
 
 public class CTString {
-    internal init(contactButtonTitle: String?, webButtonTitle: String?, dataAlertTitle: String?, dataAlertMessage: String?, dataAlertActionNo: String?, dataAlertActionYes: String?, emailSubject: String?, emailPreface: String?, emailBody: String?, emailAttachNote: String?) {
+    internal init(contactButtonTitle: String?, webButtonTitle: String?, dataAlertTitle: String?, dataAlertMessage: String?, dataAlertActionNo: String?, dataAlertActionYes: String?, emailSubject: String?, emailBody: String?, emailAttachNote: String?) {
         self.contactButtonTitle = contactButtonTitle
         self.webButtonTitle = webButtonTitle
         self.dataAlertTitle = dataAlertTitle
@@ -16,7 +16,6 @@ public class CTString {
         self.dataAlertActionNo = dataAlertActionNo
         self.dataAlertActionYes = dataAlertActionYes
         self.emailSubject = emailSubject
-        self.emailPreface = emailPreface
         self.emailBody = emailBody
         self.emailAttachNote = emailAttachNote
     }
@@ -28,7 +27,6 @@ public class CTString {
     public var dataAlertActionNo:String?
     public var dataAlertActionYes:String?
     public var emailSubject:String?
-    public var emailPreface:String?
     public var emailBody:String?
     public var emailAttachNote:String?
     

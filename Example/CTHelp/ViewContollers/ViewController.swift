@@ -21,8 +21,6 @@ class ViewController: UIViewController {
         tableView.tableFooterView = UIView()
         setupNavBar()
     }
-
-
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SingleBookViewControllerSegue" {

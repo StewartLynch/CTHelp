@@ -35,12 +35,13 @@ Also, the links to the emailAddress and webSite will be broken until replaced  w
 ```swift
 func showCTHelp() {
    let ctHelp = CTHelp()
-        // Optional values to set colors
-        //  ctHelp.ctBgViewColor = .white
-        //  ctHelp.ctTitleColor = .darkText
-        //  ctHelp.ctHelpTextColor = .darkGray
-        //  ctHelp.ctActionButtonBGColor = UIColor(red: 28/255, green: 136/255, blue: 197.255, alpha: 1)
-        //  ctHelp.ctActionButtonTextColor = .white
+
+   // Optional values to set colors
+   // ctHelp.ctBgViewColor = .white
+   // ctHelp.ctTitleColor = .darkText
+   // ctHelp.ctHelpTextColor = .darkGray
+   // ctHelp.ctActionButtonBGColor = UIColor(red: 28/255, green: 136/255, blue: 197.255, alpha: 1)
+   // ctHelp.ctActionButtonTextColor = .white
 
    ctHelp.new(CTHelpItem(title:"No Text-Image Only",
                          helpText: "",
@@ -53,6 +54,25 @@ func showCTHelp() {
                          imageName:""))
 
  // Optional addition of two default cards
+ // Use only if you wish to change the strings presented in the two default cards
+   // ctHelp.ctWebButtonTitle = ""
+   // ctHelp.ctWebHelpText = ""
+   // ctHelp.ctContactTitle = ""
+   // ctHelp.ctContactHelpText = ""
+   // ctHelp.ctIncludeDataText = ""
+   // ctHelp.ctContactButtonTitle = ""
+
+   // Email data
+   // ctHelp.ctEmailSubject = ""
+   // ctHelp.ctEmailAttachNote = ""
+   // ctHelp.ctEmailBody = ""
+
+   // Email alert
+   // ctHelp.ctDataAlertTitle = ""
+   // ctHelp.ctDataAlertMessage = ""
+   // ctHelp.ctDataAlertActionNo = ""
+   // ctHelp.ctDataAlertActionYes = ""
+
    ctHelp.appendDefaults(companyName: "Your Company Name", emailAddress: "yourContactEmail@somewhere.com", data: nil, webSite: "https://www.yourWebsite.com", companyImageName: "CompanyLogo")
 
    ctHelp.presentHelp(from: self)
@@ -66,6 +86,18 @@ The optional color values let you change each of the 4 different components of t
 So uncommenting and changing some or all of the values can change the appearance of your help card.
 
 ![image-20190124170300316](Optionals2.png)
+
+#### Optional String Values
+
+You may choose to override the strings that are used on the two default cards (web and email contact).  For your reference, here is how they match up. If you do not change the strings, the text will appear as shown with the exception of your company and app name which are passed through with the function call.
+
+![webStrings](webStrings.png)
+
+![contactStrings](contactStrings.png)
+
+![alertStrings](alertStrings.png)
+
+![emailStrings](emailStrings.png)
 
 ## More Documentation:
 

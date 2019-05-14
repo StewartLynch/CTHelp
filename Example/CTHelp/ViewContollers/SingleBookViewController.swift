@@ -78,13 +78,8 @@ extension SingleBookViewController {
                               helpText: "Just type in the notes field to update your note.\nThe note will be saved when you tap the back arrow,",
                               imageName:"UpdateNote"))
         
-        // This gathers data from the application and encodes it as a JSON String
-        let books = StorageFunctions.retrieveBooks()
-        let encodedBooks = StorageFunctions.encodedBooks(books: books)
-        let data = encodedBooks.data(using: .utf8)
-        
-        // Only add the email help item to the end.
-        ctHelp.appendDefaults(companyName: "CreaTECH Solutions", emailAddress: "slynch@createchsol.com", data: data, webSite: nil, companyImageName: nil)
+        // Only add the email help item to the end and no data is included.
+        ctHelp.appendDefaults(companyName: "CreaTECH Solutions", emailAddress: "slynch@createchsol.com", data: nil, webSite: nil, companyImageName: nil)
         ctHelp.presentHelp(from: self)
     }
 }
