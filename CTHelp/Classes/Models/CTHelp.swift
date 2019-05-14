@@ -115,10 +115,6 @@ public class CTHelp {
         let ctHelpVC = CTHelpViewController.loadTransparentModal(fromStoryboardNamed: "CTHelp") as! CTHelpViewController
         let ctString = CTString(contactButtonTitle: self.ctContactButtonTitle,
                                 webButtonTitle: self.ctWebButtonTitle,
-                                webHelpText: self.ctWebHelpText,
-                                contactTitle: self.ctContactTitle,
-                                contactHelpText: self.ctContactHelpText,
-                                includeDataText: self.ctIncludeDataText,
                                 dataAlertTitle: self.ctDataAlertTitle,
                                 dataAlertMessage: self.ctDataAlertMessage,
                                 dataAlertActionNo: self.ctDataAlertActionNo,
@@ -126,7 +122,7 @@ public class CTHelp {
                                 emailSubject: self.ctEmailSubject,
                                 emailPreface: self.ctEmailPreface,
                                 emailBody: self.ctEmailBody,
-                                emailAttachNote: self.ctEmailSubject)
+                                emailAttachNote: self.ctEmailAttachNote)
         ctHelpVC.ctString = ctString
         ctHelpVC.ctHelpItem = helpItems
         ctHelpVC.mailTintColor = ctMailtintColor

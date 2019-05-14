@@ -11,16 +11,16 @@ import MessageUI
 
 class CTEmailFunctions: NSObject {
     
-    static func emailDeveloper(withAddress address: String, withData data:Data?, mailTintColor:UIColor?, from vc:UIViewController) {
+    static func emailDeveloper(withAddress address: String, withData data:Data?, withStrings ctString: CTString, mailTintColor:UIColor?, from vc:UIViewController) {
         guard let vc = vc as? CTHelpViewController else {return}
         var alert = UIAlertController()
         if let data = data {
-            alert = UIAlertController(title: "Attach application data", message: "Would you like to attach your application data to this message to assist the developer in troubleshooting?", preferredStyle: .alert)
-            let cancelAction = UIAlertAction(title: "No", style: .cancel) { (action) in
-                self.sendEmail(withAddress:address, withData: nil, mailTintColor: mailTintColor, on: vc)
+            alert = UIAlertController(title: ctString.dataAlertTitle ?? "Attach application data", message: ctString.dataAlertMessage ?? "Would you like to attach your application data to this message to assist the developer in troubleshooting?", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: ctString.dataAlertActionNo ?? "No", style: .cancel) { (action) in
+                self.sendEmail(withAddress:address, withData: nil, withStrings: ctString, mailTintColor: mailTintColor, on: vc)
             }
-            let OKAction = UIAlertAction(title: "Yes", style: .default) { (action) in
-                self.sendEmail(withAddress:address, withData: data, mailTintColor: mailTintColor, on: vc)
+            let OKAction = UIAlertAction(title: ctString.dataAlertActionYes ?? "Yes", style: .default) { (action) in
+                self.sendEmail(withAddress:address, withData: data, withStrings: ctString, mailTintColor: mailTintColor, on: vc)
             }
             alert.addAction(OKAction)
             alert.addAction(cancelAction)
@@ -29,11 +29,11 @@ class CTEmailFunctions: NSObject {
             }
             vc.present(alert, animated: true, completion: nil)
         } else {
-            self.sendEmail(withAddress:address, withData: nil, mailTintColor: mailTintColor, on: vc)
+            self.sendEmail(withAddress:address, withData: nil, withStrings: ctString,mailTintColor: mailTintColor, on: vc)
         }
     }
     
-    static func sendEmail(withAddress address: String, withData data:Data?, mailTintColor:UIColor?, on vc:UIViewController) {
+    static func sendEmail(withAddress address: String, withData data:Data?, withStrings ctString: CTString, mailTintColor:UIColor?, on vc:UIViewController) {
         guard let vc = vc as? CTHelpViewController else {return}
         let clientInfo = CTSourceInfo()
         var body:String = "<b>\(clientInfo.appName)</b><p>"
@@ -48,12 +48,13 @@ class CTEmailFunctions: NSObject {
                 mail.view.tintColor = mailTintColor
             }
             if let data = data {
-                body += "<b>Note:</b>\(clientInfo.appName) data is attached.<p>"
+                body += ctString.emailAttachNote ?? "<b>Note:</b>\(clientInfo.appName) data is attached."
+                body += "<p>"
                 mail.addAttachmentData(data, mimeType: "text/plain", fileName: "\(clientInfo.appName).json")
             }
-            body += "Please describe the issue you are having in as much detail as possible:"
+            body += ctString.emailBody ?? "Please describe the issue you are having in as much detail as possible:"
             mail.setMessageBody(body, isHTML: true)
-            mail.setSubject("\(clientInfo.appName) Issue")
+            mail.setSubject(ctString.emailSubject ?? "\(clientInfo.appName) Issue")
             mail.setToRecipients([address])
             vc.present(mail, animated: true, completion: nil)
         } else {

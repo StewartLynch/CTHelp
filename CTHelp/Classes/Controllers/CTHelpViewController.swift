@@ -82,7 +82,7 @@ public class CTHelpViewController: UIViewController,UIScrollViewDelegate,MFMailC
     }
     
    public func emailDeveloper(withAddress emailAddress:String, withData data:Data?) {
-        CTEmailFunctions.emailDeveloper(withAddress:emailAddress, withData: data, mailTintColor: mailTintColor, from: self)
+        CTEmailFunctions.emailDeveloper(withAddress:emailAddress, withData: data,withStrings: ctString, mailTintColor: mailTintColor, from: self)
     }
     
    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
