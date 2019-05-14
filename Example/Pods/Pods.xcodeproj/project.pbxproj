@@ -23,6 +23,7 @@
 		98C7BF5D0336A3CBC4B534C3F35459B2 /* CTButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF8B7B3673570BDDBF480BB6FB35A0 /* CTButtonType.swift */; };
 		A63D85D7C8203B1F536C0E7641C9E7AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
 		AC4C1E2DF5E9561B6FEEBE52939D45BC /* CTBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715A02733FC5682DADF4283785616592 /* CTBundleExtension.swift */; };
+		BBB7139D228B0EA1008762FD /* CTString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB7139C228B0EA1008762FD /* CTString.swift */; };
 		BF947030ACF8EBED8894540E38D83FDA /* Pods-CTHelp_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AB6B4118809C087919EC9B2B2881FC4 /* Pods-CTHelp_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F276E73DAD0D39B18C6DF7E727BE27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E404AA6957590324067E330E0EC533 /* UIKit.framework */; };
 		D6EC2736C245333A534EDB5AF38BE262 /* CTHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C621A814D8DFBB428BD71F8D57E8C93 /* CTHelp.swift */; };
@@ -98,6 +99,7 @@
 		B31F07A68C31480C60BDBDE23053FC89 /* Pods-CTHelp_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CTHelp_Example-dummy.m"; sourceTree = "<group>"; };
 		B613C0586EFED7AA4EC0C83FE3262412 /* Pods-CTHelp_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTHelp_Tests-resources.sh"; sourceTree = "<group>"; };
 		B6BF1350255C145CCB4903DF8EB36403 /* Pods-CTHelp_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CTHelp_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BBB7139C228B0EA1008762FD /* CTString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTString.swift; sourceTree = "<group>"; };
 		BBE64D8158E10E47B9734BEEDCED6B65 /* CTHelp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CTHelp.modulemap; sourceTree = "<group>"; };
 		C091D365D94644C0FECF68306B528882 /* Pods-CTHelp_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTHelp_Example-frameworks.sh"; sourceTree = "<group>"; };
 		C161CC109CF202099954AB7E7DA38376 /* CTHelp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTHelp.xcconfig; sourceTree = "<group>"; };
@@ -186,8 +188,9 @@
 		22AD59E7CD801FBFD67EC124277BD2E5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DAEF8B7B3673570BDDBF480BB6FB35A0 /* CTButtonType.swift */,
+				BBB7139C228B0EA1008762FD /* CTString.swift */,
 				1C621A814D8DFBB428BD71F8D57E8C93 /* CTHelp.swift */,
+				DAEF8B7B3673570BDDBF480BB6FB35A0 /* CTButtonType.swift */,
 				6226252A2590D41D1CAFA39D91E0DD63 /* CTHelpItem.swift */,
 				CD56BE71A3B06DAF83A2DBFDDD7AB204 /* CTSourceInfo.swift */,
 			);
@@ -529,6 +532,7 @@
 				AC4C1E2DF5E9561B6FEEBE52939D45BC /* CTBundleExtension.swift in Sources */,
 				98C7BF5D0336A3CBC4B534C3F35459B2 /* CTButtonType.swift in Sources */,
 				929401815454C0DFEEDCA8C7D1830B34 /* CTDeviceExtension.swift in Sources */,
+				BBB7139D228B0EA1008762FD /* CTString.swift in Sources */,
 				F4DAE1DA00550749967BE4D1ECAC01D9 /* CTEmailFunctions.swift in Sources */,
 				0BD89204DC9C5996477B296EE10A3921 /* CTHelp-dummy.m in Sources */,
 				D6EC2736C245333A534EDB5AF38BE262 /* CTHelp.swift in Sources */,
