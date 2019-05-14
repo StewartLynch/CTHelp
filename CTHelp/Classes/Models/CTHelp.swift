@@ -14,6 +14,7 @@ import UIKit
 /// For Example:
 ///
 /// On each viewController that you wish to present a help screen, simply create a function that will be pesented by the action associated with your help button.
+/// Note: There is no need to use any of the optional values unless you wish to change colors or text
 /// This function adds in your help items for the particlar screen.
 
 ///
@@ -22,14 +23,13 @@ import UIKit
 ///func showCTHelp() {
 
 ///    let ctHelp = CTHelp()
+///
 ///    // Optional values to set colors
 ///    // ctHelp.ctBgViewColor = .white
 ///    // ctHelp.ctTitleColor = .darkText
 ///    // ctHelp.ctHelpTextColor = .darkGray
 ///    // ctHelp.ctActionButtonBGColor = UIColor(red: 28/255, green: 136/255, blue: 197.255, alpha: 1)
 ///    // ctHelp.ctActionButtonTextColor = .white
-///    // ctHelp.ctContactString = "Contact Developer"
-///    // ctHelp.ctWebString = "Visit Web Site"
 ///
 ///    ctHelp.new(CTHelpItem(title:"No Text-Image Only",
 ///                          helpText: "",
@@ -42,6 +42,25 @@ import UIKit
 ///                          imageName:""))
 ///
 ///  // Optional addition of two default cards
+///  // Use only if you wish to change the strings presented in the two default cards
+///    // ctHelp.ctContactButtonTitle = ""
+///    // ctHelp.ctWebButtonTitle = ""
+///    // ctHelp.ctWebHelpText = ""
+///    // ctHelp.ctContactTitle = ""
+///    // ctHelp.ctContactHelpText = ""
+///    // ctHelp.ctIncludeDataText = ""
+///
+///    // Email data
+///    // ctHelp.ctEmailSubject = ""
+///    // ctHelp.ctEmailPreface = ""
+///    // ctHelp.ctEmailBody = ""
+///    // ctHelp.ctEmailAttachNote = ""
+///
+///    // Email alert
+///    // ctHelp.ctDataAlertTitle = ""
+///    // ctHelp.ctDataAlertMessage = ""
+///    // ctHelp.ctDataAlertActionYes = ""
+///    // ctHelp.ctDataAlertActionNo = ""
 ///    ctHelp.appendDefaults(companyName: "Your Company Name", emailAddress: "yourContactEmail@somewhere.com", data: nil, webSite: "https://www.yourWebsite.com", companyImageName: "CompanyLogo")
 ///
 ///    ctHelp.presentHelp(from: self)

@@ -74,24 +74,8 @@ class ViewController: UIViewController {
     @objc func showCTHelp() {
         let ctHelp = CTHelp()
         ctHelp.ctMailtintColor = UIColor.bookAppTint
+
         
-        ctHelp.ctContactButtonTitle = "Hit Me"
-        ctHelp.ctWebButtonTitle = "Go Web"
-        ctHelp.ctWebHelpText = "Tap on this button to visit my web site."
-        ctHelp.ctContactTitle = "Contact Me!!!"
-        ctHelp.ctContactHelpText = "Drop me a line to if you need help."
-        ctHelp.ctIncludeDataText = "\nIf you agree, your data will be appended."
-        
-        // Email data
-        ctHelp.ctEmailSubject = "My Message Subject"
-        ctHelp.ctEmailPreface = "This is the preface"
-        ctHelp.ctEmailBody = "This is the body"
-        ctHelp.ctEmailAttachNote = "Note: attached to email"
-        
-        ctHelp.ctDataAlertTitle = "Attach your junk"
-        ctHelp.ctDataAlertMessage = "Trust me"
-        ctHelp.ctDataAlertActionYes = "Si"
-        ctHelp.ctDataAlertActionNo = "non"
         ctHelp.new(CTHelpItem(title:"List of books",
                               helpText: "This screen shows a list of all of the books that you have read.\nAs you read more books you read more books you can add to this list.\nYou can also remove books from the list as well.  See the other help screens here for more information.",
                               imageName:""))
